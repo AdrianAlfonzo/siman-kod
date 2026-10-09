@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belleza | SIMAN</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <aside aria-label="Anuncio promocional" class="top-banner">
+        <p>Designed by<strong> ADRIÁN ALFONZO </strong>| Kodigo |<strong> Frontend Dev</strong> - 2026</p>
+    </aside>
+
+    <header class="site-header">
+        <div class="header-main">
+
+            <div class="logo-container">
+                <a href="../landing-siman/index.html"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Logo-siman-nuevo.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original"
+                        alt="Siman Logo"></a>
+            </div>
+
+            <!-- Buscador global -->
+            <search class="search-bar">
+                <form action="/search" method="get">
+                    <label for="site-search" class="sr-only">Buscar productos</label>
+                    <input type="search" id="site-search" name="q" placeholder="Buscar...">
+                    <button type="submit" aria-label="Buscar">🔍</button>
+                </form>
+            </search>
+
+            <nav class="user-nav" aria-label="Menú de usuario">
+                <ul>
+                    <li><a href="../landing-siman/formulario.html">Crear cuenta</a></li>
+                    <li>
+                        <a href="#" class="cart-link" aria-label="Mi carrito, 0 productos">
+                            Mi carrito <span>$0.00</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="main-navigation" aria-label="Categorías principales">
+            <ul class="nav-links">
+                <li><a href="../landing-siman/navidad.html">🎅 Navidad</a></li>
+                <li><a href="../landing-siman/belleza.html" aria-selected="true"><b>💄 Belleza</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="product-shelf" aria-labelledby="shelf-title">
+            <h2 id="shelf-title">Deja que el cuidado llegue a cada parte de tu rutina con skincare, maquillaje,
+                fragancias y más. ¡Compra ya!</h2>
+            <div class="product-grid">
+
+                <!-- Tarjeta de producto individual -->
+                <article class="product-card">
+                    <a href="#">
+                        <img src="https://siman.vtexassets.com/arquivos/ids/8382291-1200-auto?v=639222300201170000&width=1200&height=auto&aspect=true"
+                            alt="Serum Niacinamida 10% + Zinc 1%" loading="lazy">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-brand">The Ordinary</span>
+                        <h3 class="product-title">
+                            <a href="#">Serum Niacinamida 10% + Zinc 1%</a>
+                        </h3>
+                        <p class="product-vendor">Vendido por <em>Siman</em></p>
+
+                        <div class="price-container">
+                            <span class="price-current">$12.90</span>
+                        </div>
+
+                        <button type="button" class="btn-add-cart">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <a href="#">
+                        <img src="https://siman.vtexassets.com/arquivos/ids/8382349-1200-auto?v=639222300245900000&width=1200&height=auto&aspect=true"
+                            alt="Crema Hidratante Natural con Acido Hialurónico" loading="lazy">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-brand">The Ordinary</span>
+                        <h3 class="product-title">
+                            <a href="#">Crema Hidratante Natural con Acido Hialurónico</a>
+                        </h3>
+                        <p class="product-vendor">Vendido por <em>Siman</em></p>
+
+                        <div class="price-container">
+                            <span class="price-current">$16.00</span>
+                        </div>
+
+                        <button type="button" class="btn-add-cart">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <a href="#">
+                        <img src="https://siman.vtexassets.com/arquivos/ids/8382306-1200-auto?v=639222300213900000&width=1200&height=auto&aspect=true"
+                            alt="Serum Cafeína 5% + EGCG - 30 ml" loading="lazy">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-brand">The Ordinary</span>
+                        <h3 class="product-title">
+                            <a href="#">Serum Cafeína 5% + EGCG - 30 ml</a>
+                        </h3>
+                        <p class="product-vendor">Vendido por <em>Siman</em></p>
+
+                        <div class="price-container">
+                            <span class="price-current">$15.90</span>
+                        </div>
+
+                        <button type="button" class="btn-add-cart">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <a href="#">
+                        <img src="https://siman.vtexassets.com/arquivos/ids/7334677-1200-auto?v=638950213214600000&width=1200&height=auto&aspect=true"
+                            alt="Labial Líquido Super Stay Teddy Tint Matte" loading="lazy">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-brand">Maybelline</span>
+                        <h3 class="product-title">
+                            <a href="#">Labial Líquido Super Stay Teddy Tint Matte</a>
+                        </h3>
+                        <p class="product-vendor">Vendido por <em>Siman</em></p>
+
+                        <div class="price-container">
+                            <span class="price-current">$10.99</span>
+                        </div>
+
+                        <button type="button" class="btn-add-cart">Agregar al carrito</button>
+                    </div>
+                </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <h4>Ayuda</h4>
+                <a href="#">Atención al cliente</a>
+                <a href="#">Rastrea tu pedido</a>
+            </div>
+
+            <div>
+                <h4>Acerca de</h4>
+                <a href="#">Quiénes somos</a>
+                <a href="#">Trabaja con nosotros</a>
+            </div>
+
+            <div>
+                <h4>SIMAN 2026</h4>
+                <p>Todos los derechos reservados.</p>
+                <p>Diseñado por ADRIÁN ALFONZO</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

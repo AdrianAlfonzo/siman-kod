@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta | SIMAN</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <aside aria-label="Anuncio promocional" class="top-banner">
+        <p>Designed by<strong> ADRIÁN ALFONZO </strong>| Kodigo |<strong> Frontend Dev</strong> - 2026</p>
+    </aside>
+
+    <header class="site-header">
+        <div class="header-main">
+
+            <div class="logo-container">
+                <a href="../landing-siman/index.html"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Logo-siman-nuevo.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original"
+                        alt="Siman Logo"></a>
+            </div>
+
+            <!-- Buscador global -->
+            <search class="search-bar">
+                <form action="/search" method="get">
+                    <label for="site-search" class="sr-only">Buscar productos</label>
+                    <input type="search" id="site-search" name="q" placeholder="Buscar...">
+                    <button type="submit" aria-label="Buscar">🔍</button>
+                </form>
+            </search>
+
+            <nav class="user-nav" aria-label="Menú de usuario">
+                <ul>
+                    <li><a href="../landing-siman/formulario.html" aria-selected="true"><b>Crear cuenta</b></a></li>
+                    <li>
+                        <a href="#" class="cart-link" aria-label="Mi carrito, 0 productos">
+                            Mi carrito <span>$0.00</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="main-navigation" aria-label="Categorías principales">
+            <ul class="nav-links">
+                <li><a href="../landing-siman/navidad.html">🎅 Navidad</a></li>
+                <li><a href="../landing-siman/belleza.html">💄 Belleza</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="form-title">
+            <h1 id="form-title">Crear Cuenta - Almacenes SIMAN</h1>
+            <p>Completa tus datos personales y de contacto para disfrutar de una mejor experiencia de compra.</p>
+
+            <form id="formulario-registro" action="#" method="POST" novalidate>
+
+                <fieldset>
+                    <legend>Información Personal</legend>
+
+                    <div>
+                        <label for="nombre">Nombres:</label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="given-name" required
+                            placeholder="Ej. Juan Carlos">
+                    </div>
+
+                    <div>
+                        <label for="apellido">Apellidos:</label>
+                        <input type="text" id="apellido" name="apellido" autocomplete="family-name" required
+                            placeholder="Ej. Pérez Gómez">
+                    </div>
+
+                    <div>
+                        <label for="genero">Género (Opcional):</label>
+                        <select id="genero" name="genero">
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="otro">Prefiero no decirlo</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos de Contacto y Acceso</legend>
+
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required
+                            placeholder="tucorreo@ejemplo.com">
+                    </div>
+
+                    <div>
+                        <label for="telefono">Número de Teléfono / Móvil:</label>
+                        <input type="tel" id="telefono" name="telefono" autocomplete="tel" required
+                            placeholder="Ej. 7000-0000">
+                    </div>
+
+                    <div>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" autocomplete="new-password" required
+                            minlength="8" placeholder="Mínimo 8 caracteres">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias y Términos</legend>
+
+                    <div>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="suscrito" checked>
+                        <label for="newsletter">Deseo recibir ofertas exclusivas, novedades y promociones por correo
+                            electrónico.</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los <a href="#" target="_blank" rel="noopener">Términos y
+                                Condiciones</a> y la Política de Privacidad.</label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <button type="submit">Registrarse</button>
+                    <button type="reset">Limpiar formulario</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <h4>Ayuda</h4>
+                <a href="#">Atención al cliente</a>
+                <a href="#">Rastrea tu pedido</a>
+            </div>
+
+            <div>
+                <h4>Acerca de</h4>
+                <a href="#">Quiénes somos</a>
+                <a href="#">Trabaja con nosotros</a>
+            </div>
+
+            <div>
+                <h4>SIMAN 2026</h4>
+                <p>Todos los derechos reservados.</p>
+                <p>Diseñado por ADRIÁN ALFONZO</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMAN | Adrián Alfonzo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <aside aria-label="Anuncio promocional" class="top-banner">
+        <p>Designed by<strong> ADRIÁN ALFONZO </strong>| Kodigo |<strong> Frontend Dev</strong> - 2026</p>
+    </aside>
+
+    <header class="site-header">
+        <div class="header-main">
+
+            <div class="logo-container">
+                <a href="../landing-siman/index.html"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Logo-siman-nuevo.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original"
+                        alt="Siman Logo"></a>
+            </div>
+
+            <!-- Buscador global -->
+            <search class="search-bar">
+                <form action="/search" method="get">
+                    <label for="site-search" class="sr-only">Buscar productos</label>
+                    <input type="search" id="site-search" name="q" placeholder="Buscar...">
+                    <button type="submit" aria-label="Buscar">🔍</button>
+                </form>
+            </search>
+
+            <nav class="user-nav" aria-label="Menú de usuario">
+                <ul>
+                    <li><a href="../landing-siman/formulario.html">Crear cuenta</a></li>
+                    <li>
+                        <a href="#" class="cart-link" aria-label="Mi carrito, 0 productos">
+                            Mi carrito <span>$0.00</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Navegación principal-->
+        <nav class="main-navigation" aria-label="Categorías principales">
+            <ul class="nav-links">
+                <li><a href="../landing-siman/navidad.html">🎅 Navidad</a></li>
+                <li><a href="../landing-siman/belleza.html">💄 Belleza</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <section class="product-shelf" aria-labelledby="shelf-title">
+            <h2 id="shelf-title">¡En tendencia ahora mismo!</h2>
+            <div class="product-grid">
+
+                <!-- Tarjeta de producto individual -->
+                <article class="product-card">
+                    <a href="#">
+                        <img src="https://siman.vtexassets.com/arquivos/ids/8382273-1200-auto?v=639222300186000000&width=1200&height=auto&aspect=true"
+                            alt="Tónico Exfoliante de Acido Glicolico" loading="lazy">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-brand">The Ordinary</span>
+                        <h3 class="product-title">
+                            <a href="#">Tónico Exfoliante de Acido Glicolico</a>
+                        </h3>
+                        <p class="product-vendor">Vendido por <em>Siman</em></p>
+
+                        <div class="price-container">
+                            <span class="price-current">$17.50</span>
+                        </div>
+
+                        <button type="button" class="btn-add-cart">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-badge">-33%</div>
+                    <a href="#">
+                        <img src="https://siman.vtexassets.com/arquivos/ids/6742266-1200-auto?v=638786884554730000&width=1200&height=auto&aspect=true"
+                            alt="Celular Samsung Galaxy S25 Ultra SM-S938BZTKGTO 12GB RAM 256GB SSD Pantalla 6.9"
+                            loading="lazy">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-brand">Samsung</span>
+                        <h3 class="product-title">
+                            <a href="#">Celular Samsung Galaxy S25 Ultra SM-S938BZTKGTO 12GB RAM 256GB SSD Pantalla 6.9"
+                                (17.53 cm) Snapdragon 8 Elite Cámara avanzada Cámara Posterior 200 MP
+                            </a>
+                        </h3>
+                        <p class="product-vendor">Vendido por <em>Siman</em></p>
+
+                        <div class="price-container">
+                            <span class="price-original">$1,499.00</span>
+                            <span class="price-current">$1,145.00</span>
+                        </div>
+
+                        <button type="button" class="btn-add-cart">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-badge">-9%</div>
+                    <a href="#">
+                        <img src="https://siman.vtexassets.com/arquivos/ids/8483227-500-auto?v=639246460807430000&width=500&height=auto&aspect=true"
+                            alt="Teclado Musical Yamaha digital 61 teclas" loading="lazy">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-brand">Yamaha</span>
+                        <h3 class="product-title">
+                            <a href="#">Teclado musical Yamaha digital 61 teclas PSR-E483</a>
+                        </h3>
+                        <p class="product-vendor">Vendido por <em>Siman</em></p>
+
+                        <div class="price-container">
+                            <span class="price-original">$549.00</span>
+                            <span class="price-current">$499.00</span>
+                        </div>
+
+                        <button type="button" class="btn-add-cart">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <a href="#">
+                        <img src="https://siman.vtexassets.com/arquivos/ids/6554337-1200-auto?v=638743854831870000&width=1200&height=auto&aspect=true"
+                            alt="Teclado Musical Yamaha digital 61 teclas" loading="lazy">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-brand">Siman</span>
+                        <h3 class="product-title">
+                            <a href="/producto-teclado">Certificado de Regalo</a>
+                        </h3>
+                        <p class="product-vendor">Vendido por <em>Siman</em></p>
+
+                        <div class="price-container">
+                            <span class="price-current">$25.00</span>
+                        </div>
+
+                        <button type="button" class="btn-add-cart">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <h4>Ayuda</h4>
+                <a href="#">Atención al cliente</a>
+                <a href="#">Rastrea tu pedido</a>
+            </div>
+
+            <div>
+                <h4>Acerca de</h4>
+                <a href="#">Quiénes somos</a>
+                <a href="#">Trabaja con nosotros</a>
+            </div>
+
+            <div>
+                <h4>SIMAN 2026</h4>
+                <p>Todos los derechos reservados.</p>
+                <p>Diseñado por ADRIÁN ALFONZO</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
